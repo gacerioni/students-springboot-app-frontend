@@ -1,6 +1,6 @@
 FROM nginx
 LABEL maintainer="Gabriel Cerioni <gacerioni@gmail.com>"
 
-EXPOSE 8080
+EXPOSE 80
 
 COPY build /usr/share/nginx/html
