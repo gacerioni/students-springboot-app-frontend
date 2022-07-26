@@ -15,8 +15,6 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: <+service.name>
 
-apiPathToProbeTesting: /api/v1/students
-
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
@@ -48,10 +46,7 @@ env:
     STABLE_ENDPOINT: "blabla"
     CANARY_ENDPOINT: "bleble"
   secrets:
-    PG_DB_HOST: <+secrets.getValue("org.springbootdemopostgresserver")>
-    PG_DB_PORT: <+secrets.getValue("org.springbootdemopostgresport")>
-    PG_DB_USER: <+secrets.getValue("org.springbootdemopostgresuser")>
-    PG_DB_PWD: <+secrets.getValue("org.springbootdemopostgrespwd")>
+    REACT_APP_API_URI: "http://gabs.harness-demo.site"
 
 ingress:
   enabled: false
