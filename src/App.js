@@ -237,7 +237,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
               href="https://www.linkedin.com/in/gabrielcerioni">
-            Gabs LinkedIn
+            Gabriel Cerioni - LinkedIn
           </a>
         </Divider>
       </Footer>
